@@ -1,23 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
+import MovieCard from './components/MovieCard'
 
 function App() {
-  const [count, setCount] = useState(0)
 
-  //<> </> This is a fragment, normally components only allows one parent element, like 1 div, to be returned.  
+  //This is a fragment: <> </>, normally components only allows one parent element, like 1 div, to be returned.  
   //The fragment serves as a place holder for a parent element.  With a fragement, we can return 2 div elements. 
 
   return (
     <> 
-    <div>
-        <p>Hello World.</p>
-      </div>
-            <div>
-        <p>Hello World.</p>
-      </div>
+     <div>
+      <p>Welcome to the Movie App!</p>
+     </div>
+     <MovieCard movie={{ title: "My React Demo Movie", release_date: "2026-07-10"  }} />
+     <MovieCard movie={{ title: "War of the Worlds", release_date: "1992"  }} />
+     <MovieCard movie={{ title: "Bill and Ted's Bogus Journey", release_date: "1993"  }} />
     </>
   )
 }
