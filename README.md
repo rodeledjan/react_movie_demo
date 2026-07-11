@@ -1,70 +1,50 @@
 # React Movie Demo
-A small React app built with Vite, following a React demo project provided by Tech with Tim.  The app demonstrates  the React structure and shows how to work with a modern frontend setup.
+A small React app built with Vite.  This demo was provided by Tech with Tim.  The app demonstrates the React structure and shows how to work with a modern frontend setup.
 
-# react_movie_demo
-Followed a React Demo by Tech with Tim 
+## Tech stack
 
-## Setup
+- React 19
+- Vite 8
+- Oxlint
+
+## Getting started
+
+From the project root, run:
 
 ```bash
 cd frontend
 npm install
-```
-
-## Run locally
-
-```bash
 npm run dev
 ```
 
-Open the local URL shown in your browser.
+Open the local URL shown in the terminal, usually http://localhost:5173.
 
-## Build
+## Available scripts
 
 ```bash
+npm run dev
 npm run build
-```
-
-## Preview production build
-
-```bash
 npm run preview
-```
-
-## Lint
-
-```bash
 npm run lint
 ```
+
+- `npm run dev` starts the development server
+- `npm run build` creates a production build
+- `npm run preview` previews the production build locally
+- `npm run lint` runs the linter
 
 ## Project structure
 
 - `frontend/`
   - `src/` — React source files
   - `public/` — static assets
-  - `package.json` — dependencies and scripts
-  - `vite.config.js` — Vite build configuration
-  - `README.md` — frontend-specific documentation
+  - `package.json` — app dependencies and scripts
+  - `vite.config.js` — Vite configuration
 
 ## Notes
 
-- Uses React 19 and Vite 8.
-- `oxlint` is configured for linting.
-- Ignore generated folders like `node_modules/`, `dist/`, and editor config files.
+- Make sure Node.js and npm are installed before running the app.
+- Ignore generated folders such as `node_modules/` and `dist/` in your editor.
 
-## Git
 
-```bash
-cd frontend
-git init -b main
-git add .
-git commit -m "Initial commit"
-```
-
-Then add your remote and push:
-
-```bash
-git remote add origin <repo-url>
-git push -u origin main
-```
 
