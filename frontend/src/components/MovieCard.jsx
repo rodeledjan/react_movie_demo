@@ -9,8 +9,7 @@ function MovieCard({ movie }) {
             <div className="movie-poster">
                 <img src={movie.url} alt={movie.title} />
                 <div className="movie-overlay">
-                <button className="favorite-btn" onClick={OnFavoriteClick}>
-                    &#9825;
+                <button className="favorite-btn" onClick={OnFavoriteClick}>                    
                     ♡
                 </button>
             </div>
