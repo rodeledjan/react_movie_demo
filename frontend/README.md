@@ -1,16 +1,52 @@
-# React + Vite
+# React Movie Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A small React app built with Vite. The frontend demonstrates a modern React project structure with routing and reusable components.
 
-Currently, two official plugins are available:
+## Tech stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React 19
+- Vite 8
+- React Router DOM
+- Oxlint
 
-## React Compiler
+## Getting started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+From the project root:
 
-## Expanding the Oxlint configuration
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Open the local URL shown in the terminal, usually `http://localhost:5173`.
+
+## Available scripts
+
+```bash
+npm run dev
+npm run build
+npm run preview
+npm run lint
+```
+
+- `npm run dev` starts the development server
+- `npm run build` creates a production build
+- `npm run preview` previews the production build locally
+- `npm run lint` runs Oxlint against the source files
+
+## Project structure
+
+- `src/`
+  - `components/` — reusable UI components like `Navbar` and `MovieCard`
+  - `pages/` — page views such as `Home` and `Favorites`
+  - `App.jsx` — top-level app layout and routes
+  - `main.jsx` — app bootstrap entry point
+- `public/` — static assets
+- `package.json` — app dependencies and scripts
+- `vite.config.js` — Vite configuration
+
+## Notes
+
+- Ensure Node.js and npm are installed before running the project.
+- Ignore generated folders such as `node_modules/` and `dist/` in your editor.
