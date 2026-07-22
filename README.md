@@ -2,7 +2,7 @@
 
 A small React app built with Vite.  This demo was provided by Tech with Tim.  The app demonstrates the React structure and shows how to work with a modern frontend setup.
 
-The frontend includes a home page, favorites page, reusable movie cards, and a responsive navbar.
+The frontend includes a home page, favorites page, reusable movie cards, routing, and a responsive navbar. It also uses `MovieProvider` context for favorites and persists saved movies in `localStorage`.
 
 ## Tech stack
 
@@ -22,6 +22,19 @@ npm run dev
 ```
 
 Open the local URL shown in the terminal, usually `http://localhost:5173`.
+
+## Features
+
+- Home page with movie listings
+- Search movies by title
+- Favorites page for saved movies
+- Favorites persisted in `localStorage`
+- Reusable `MovieCard` component
+- Responsive `Navbar` and React Router navigation
+
+## Frontend setup
+
+The app lives in `frontend/`. For more details, see `frontend/README.md`.
 
 ## Available scripts
 
@@ -51,6 +64,7 @@ npm run lint
 
 - Make sure Node.js and npm are installed before running the app.
 - Ignore generated folders such as `node_modules/` and `dist/` in your editor.
+ - This demo requires an API key from The Movie Database (TMDB). Create an account and get an API key at https://www.themoviedb.org. Then either set the environment variable `REACT_APP_API_KEY` before starting the app or replace the placeholder in `frontend/src/services/api.js`.
 
 
 

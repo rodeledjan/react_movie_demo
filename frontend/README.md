@@ -50,3 +50,4 @@ npm run lint
 
 - Ensure Node.js and npm are installed before running the project.
 - Ignore generated folders such as `node_modules/` and `dist/` in your editor.
+ - This demo requires an API key from The Movie Database (TMDB). Create an account and get an API key at https://www.themoviedb.org. Then either set the environment variable `REACT_APP_API_KEY` before starting the app or replace the placeholder in `src/services/api.js`.
